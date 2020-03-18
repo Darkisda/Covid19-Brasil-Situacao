@@ -1,18 +1,21 @@
 import React from 'react'
 
+import './style.css'
+
 function CovidItem({state}){
     return(
-        <li>
-            Estado: <strong>{state.state}</strong> <br/>
-            UF: <p>{state.uf}</p> <br/>
-            Situação: <p>{state.comments}</p>
-            Numeros de Suspeitas: <p>{state.suspects}</p> <br/>
-            Numeros de Casos Confirmados: <p>{state.cases}</p> <br/>
-            Numeros de Casos Negados: <p>{state.refuses}</p> <br/>
-            Numeros de Mortes: <p>{state.deaths}</p> <br/>
-            <br/>
-            Última atualização: {state.updated_at}
-        </li>
+        <div className="itens">
+            <div className="itens-block">
+                <p>Estado: <strong>{state.state}</strong></p>
+                <p>Situação: <strong>{state.comments === "" ? "Situação Dentro do controle ou estável" : state.comments}</strong></p>
+                <p>Suspeitas: <strong>{state.suspects}</strong></p>
+            </div>
+            <div className="itens-block">
+                <p>Suspeitas Negadas: <strong>{state.refuses}</strong></p>
+                <p>Casos: <strong>{state.cases}</strong></p>
+                <p>Mortes: <strong>{state.deaths}</strong></p>
+            </div>
+        </div>
     )
 }
 

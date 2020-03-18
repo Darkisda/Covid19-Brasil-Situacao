@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 
+import './global.css'
+import './App.css'
 
 import CovidForm from './components/CovidForm'
 import CovidItem from './components/CovidItem'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -35,11 +38,11 @@ function App() {
   return (
     <div className="App">
       
-      <strong>Pesquisar</strong>
       <CovidForm onSubmit={findState}/>
       
       <CovidItem state={state} />
       
+      <Footer />
     </div>
   );
 }

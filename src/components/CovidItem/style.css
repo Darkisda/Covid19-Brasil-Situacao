@@ -1,0 +1,27 @@
+.itens {
+    color: #fff;
+    display: flex;
+    flex-direction: flex;
+    text-align: justify;
+    width: 35%;
+    margin: 0 auto;
+    background-color: rgb(39, 31, 49);
+    padding: 10px 10px;
+    border-radius: 15px;
+}
+
+.itens-block{
+    width: 60%;
+    margin: 0 auto;
+    padding: 0px 23px ;
+}
+
+.itens-block p {
+    padding: 10px 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .itens{
+        display: inline;
+    }
+}

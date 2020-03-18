@@ -1,0 +1,84 @@
+
+.covid-form{
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.input-block input {
+    color: rgb(175, 175, 175);
+    font-size: 150%;
+    text-align: center;
+    width: 100%;
+    border: 0;
+    border-radius: 13px;
+    padding: 15px 25px;
+}
+
+.input-block {
+    margin: 20px;
+}
+
+.covid-brasil img{
+    width: 100%;
+}
+
+button[type=submit] {
+    width: 100%;
+    border: 0;
+    margin-top: 10px;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+button[type=submit]:hover {
+    background: rgba(77, 153, 74, 0.933);
+}
+
+@media only screen and (max-width: 450px) {
+    .covid-form {
+        width: 60%;
+    }
+
+    .input-block input {
+        font-size: 90%;
+        padding: 8px 8px;
+        border-radius: 20px;
+    }
+
+    .input-block {
+        margin: 10px;
+    }
+    
+    button[type=submit] {
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .covid-form {
+        width: 60%;
+    }
+
+    .input-block input {
+        font-size: 130%;
+        padding: 8px 8px;
+        border-radius: 20px;
+    }
+
+    .input-block {
+        margin: 10px;
+    }
+    
+    button[type=submit] {
+        padding: 8px 8px;
+        font-size: 1.5rem;
+    }
+}
