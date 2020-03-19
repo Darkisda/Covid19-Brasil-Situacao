@@ -24,17 +24,18 @@ function App() {
   }, [])
 
   function findState(name){
+    
     const estado = () => {
       for (let i = 0; i < covid.length; i++) {
-        console.log(covid[i].state)
-        if(covid[i].state.toUpperCase() === name.state.toUpperCase()) {
+        if((covid[i].state.toUpperCase() === name.state.toUpperCase()) || (covid[i].uf.toUpperCase() === name.state.toUpperCase())) {
           return covid[i]
         }
       }
     }
+
     setState(estado)
   }
-
+  
   return (
     <div className="App">
       

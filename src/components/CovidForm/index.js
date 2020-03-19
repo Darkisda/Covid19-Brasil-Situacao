@@ -28,7 +28,7 @@ function CovidForm({ onSubmit }) {
                         id="state"
                         name="state"
                         value={state}
-                        placeholder="Digite o nome do Estado"
+                        placeholder="Digite o nome do Estado ou Sigla"
                         onChange={event => setState(event.target.value)}
                         required
                     />
